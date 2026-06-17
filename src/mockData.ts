@@ -46,8 +46,8 @@ export const creators: Creator[] = [
     postCount: 142,
     basePrice: 9.99,
     bio: 'Professional pedicurist sharing daily foot care routines, beautiful polishes, and relaxing spa sessions.',
-    avatarGradient: generateGradient('#F2C977', '#E3A53C'),
-    coverGradient: generateGradient('#2C261E', '#E3A53C'),
+    avatarGradient: generateGradient('#C8AA6E', '#D8BE8A'),
+    coverGradient: generateGradient('#1A1A1A', '#D8BE8A'),
   },
   {
     id: 'c2',
@@ -59,8 +59,8 @@ export const creators: Creator[] = [
     postCount: 89,
     basePrice: 14.99,
     bio: 'Exploring the world one barefoot step at a time. Nature walks, earthy vibes, and grounded living.',
-    avatarGradient: generateGradient('#5FB89E', '#2C261E'),
-    coverGradient: generateGradient('#15120E', '#5FB89E'),
+    avatarGradient: generateGradient('#D7A89E', '#1A1A1A'),
+    coverGradient: generateGradient('#0A0A0A', '#D7A89E'),
   },
   {
     id: 'c3',
@@ -72,8 +72,8 @@ export const creators: Creator[] = [
     postCount: 312,
     basePrice: 19.99,
     bio: 'High fashion foot modeling. Editorial shoots, luxury footwear, and elegant poses.',
-    avatarGradient: generateGradient('#E3A53C', '#15120E'),
-    coverGradient: generateGradient('#F2C977', '#1F1B15'),
+    avatarGradient: generateGradient('#D8BE8A', '#0A0A0A'),
+    coverGradient: generateGradient('#C8AA6E', '#141414'),
   },
   {
     id: 'c4',
@@ -85,8 +85,8 @@ export const creators: Creator[] = [
     postCount: 56,
     basePrice: 24.99,
     bio: 'Certified reflexologist showing pressure point techniques to relieve stress and pain.',
-    avatarGradient: generateGradient('#A99C87', '#2C261E'),
-    coverGradient: generateGradient('#1F1B15', '#A99C87'),
+    avatarGradient: generateGradient('#A89F93', '#1A1A1A'),
+    coverGradient: generateGradient('#141414', '#A89F93'),
   },
   {
     id: 'c5',
@@ -98,8 +98,8 @@ export const creators: Creator[] = [
     postCount: 28,
     basePrice: 29.99,
     bio: 'You request it, I paint it! Custom nail art and specific poses for members only.',
-    avatarGradient: generateGradient('#F3EDE3', '#E3A53C'),
-    coverGradient: generateGradient('#E3A53C', '#2C261E'),
+    avatarGradient: generateGradient('#F6F1E8', '#D8BE8A'),
+    coverGradient: generateGradient('#D8BE8A', '#1A1A1A'),
   },
   {
     id: 'c6',
@@ -111,8 +111,8 @@ export const creators: Creator[] = [
     postCount: 204,
     basePrice: 12.99,
     bio: 'Daily barefoot adventures on the beach, in the forest, and around the city.',
-    avatarGradient: generateGradient('#2C261E', '#5FB89E'),
-    coverGradient: generateGradient('#1F1B15', '#5FB89E'),
+    avatarGradient: generateGradient('#1A1A1A', '#D7A89E'),
+    coverGradient: generateGradient('#141414', '#D7A89E'),
   },
   {
     id: 'c7',
@@ -124,8 +124,8 @@ export const creators: Creator[] = [
     postCount: 115,
     basePrice: 9.99,
     bio: 'ASMR pedicure sessions, cuticle care, and flawless polish applications.',
-    avatarGradient: generateGradient('#E3A53C', '#A99C87'),
-    coverGradient: generateGradient('#A99C87', '#15120E'),
+    avatarGradient: generateGradient('#D8BE8A', '#A89F93'),
+    coverGradient: generateGradient('#A89F93', '#0A0A0A'),
   },
   {
     id: 'c8',
@@ -137,8 +137,8 @@ export const creators: Creator[] = [
     postCount: 12,
     basePrice: 4.99,
     bio: 'Just getting started! Join my journey and get early access to my content.',
-    avatarGradient: generateGradient('#A99C87', '#F3EDE3'),
-    coverGradient: generateGradient('#2C261E', '#F3EDE3'),
+    avatarGradient: generateGradient('#A89F93', '#F6F1E8'),
+    coverGradient: generateGradient('#1A1A1A', '#F6F1E8'),
   }
 ];
 
@@ -155,8 +155,8 @@ export const getPostsForCreator = (creatorId: string): Post[] => {
     // First 3 are free preview
     type: i < 3 ? 'free' : 'members-only',
     gradient: generateGradient(
-      ['#2C261E', '#E3A53C', '#5FB89E', '#A99C87', '#1F1B15'][i % 5],
-      ['#F2C977', '#15120E', '#A99C87', '#2C261E', '#5FB89E'][(i + 2) % 5]
+      ['#1A1A1A', '#D8BE8A', '#D7A89E', '#A89F93', '#141414'][i % 5],
+      ['#C8AA6E', '#0A0A0A', '#A89F93', '#1A1A1A', '#D7A89E'][(i + 2) % 5]
     ),
     date: new Date(Date.now() - i * 86400000 * 2).toISOString(), // fake past dates
     likes: Math.floor(Math.random() * 1000) + 50,

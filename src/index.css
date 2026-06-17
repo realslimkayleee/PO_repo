@@ -1,13 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #15120E;
-  --color-ink-2: #1F1B15;
-  --color-ink-3: #2C261E;
-  --color-cream: #F3EDE3;
-  --color-mute: #A99C87;
-  --color-gold: #E3A53C;
-  --color-gold-2: #F2C977;
+  --color-ink: #0A0A0A;
+  --color-ink-2: #141414;
+  --color-ink-3: #1A1A1A;
+  --color-cream: #F6F1E8;
+  --color-mute: #A89F93;
+  --color-gold: #D8BE8A;
+  --color-gold-2: #C8AA6E;
+  --color-sand: #E9DED0;
+  --color-nude: #D9C2AE;
+  --color-rose: #D7A89E;
   --color-ok: #5FB89E;
 
   --font-sans: "Inter", sans-serif;
@@ -22,10 +25,10 @@
 
 @layer utilities {
   .border-hairline {
-    border-color: rgba(243, 237, 227, 0.1);
+    border-color: rgba(246, 241, 232, 0.08);
   }
   .bg-radial-gold-glow {
-    background: radial-gradient(circle at 50% 0%, rgba(227, 165, 60, 0.15) 0%, transparent 70%);
+    background: radial-gradient(circle at 50% 0%, rgba(216, 190, 138, 0.12) 0%, transparent 70%);
   }
   .pb-safe {
     padding-bottom: env(safe-area-inset-bottom);
