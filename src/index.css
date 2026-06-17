@@ -11,7 +11,7 @@
   --color-ok: #5FB89E;
 
   --font-sans: "Inter", sans-serif;
-  --font-display: "Space Grotesk", sans-serif;
+  --font-display: "Playfair Display", serif;
 }
 
 @layer base {
