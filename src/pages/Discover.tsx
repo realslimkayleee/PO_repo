@@ -16,6 +16,9 @@ export const Discover = () => {
       {/* Hero Section */}
       <section className="relative py-12 md:py-20 text-center overflow-hidden">
         <div className="absolute inset-0 bg-radial-gold-glow -z-10" />
+        <p className="text-gold-2 font-medium tracking-widest uppercase text-sm mb-4 animate-in fade-in slide-in-from-bottom-2 duration-700">
+          Welcome to Pedicures Only
+        </p>
         <h1 className="text-4xl md:text-6xl font-display font-bold text-cream mb-4 tracking-tight">
           Find Your Perfect <span className="text-gold-2">Sole</span> Mate
         </h1>
