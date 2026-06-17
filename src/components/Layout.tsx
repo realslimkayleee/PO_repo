@@ -14,7 +14,7 @@ const Header = () => (
     <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
       <NavLink to="/" className="flex items-center gap-2 -ml-2 group">
         <img src="/PO_logo_icon_transparent.png" alt="PedicuresOnly Logo" className="h-20 w-auto object-contain group-hover:opacity-90 transition-opacity" />
-        <span className="text-xl font-display font-semibold tracking-tight hidden sm:block bg-gradient-to-tr from-gold-2 via-cream to-gold text-transparent bg-clip-text">PedicuresOnly</span>
+        <span className="text-xl font-display font-semibold tracking-tight bg-gradient-to-tr from-gold-2 via-cream to-gold text-transparent bg-clip-text">PedicuresOnly</span>
       </NavLink>
       <nav className="hidden sm:flex items-center space-x-6 text-sm font-medium">
         <NavLink to="/" className={({ isActive }) => cn("hover:text-cream transition-colors", isActive ? "text-cream" : "text-mute")}>
