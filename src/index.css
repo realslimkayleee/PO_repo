@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #15120E;
+  --color-ink-2: #1F1B15;
+  --color-ink-3: #2C261E;
+  --color-cream: #F3EDE3;
+  --color-mute: #A99C87;
+  --color-gold: #E3A53C;
+  --color-gold-2: #F2C977;
+  --color-ok: #5FB89E;
+
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-ink text-cream font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .border-hairline {
+    border-color: rgba(243, 237, 227, 0.1);
+  }
+  .bg-radial-gold-glow {
+    background: radial-gradient(circle at 50% 0%, rgba(227, 165, 60, 0.15) 0%, transparent 70%);
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  .animate-in {
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .fade-in {
+    animation-name: fadeIn;
+  }
+  .zoom-in {
+    animation-name: zoomIn;
+  }
+}
