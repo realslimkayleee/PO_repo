@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { SubscriptionProvider } from './SubscriptionContext'
 import { Layout } from './components/Layout'

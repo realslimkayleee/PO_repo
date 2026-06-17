@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 import { useSubscription } from '../SubscriptionContext';
 import { getFeedPosts } from '../mockData';
 import { PostCard } from '../components/PostCard';

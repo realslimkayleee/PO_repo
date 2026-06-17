@@ -1,7 +1,6 @@
 import React from 'react';
 import type { Creator } from '../mockData';
 import { X, CheckCircle2 } from 'lucide-react';
-import { cn } from './Layout';
 
 interface SubscribeModalProps {
   isOpen: boolean;

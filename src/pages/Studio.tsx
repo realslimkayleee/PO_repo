@@ -1,6 +1,4 @@
-import React from 'react';
 import { DollarSign, Users, Image as ImageIcon, TrendingUp, Upload, Shield } from 'lucide-react';
-import { cn } from '../components/Layout';
 
 const KpiCard = ({ title, value, icon: Icon, trend }: { title: string, value: string, icon: any, trend: string }) => (
   <div className="bg-ink-2 border border-white/5 p-6 rounded-2xl">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { creators, categories } from '../mockData';
 import { CreatorCard } from '../components/CreatorCard';
 import { cn } from '../components/Layout';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { Home, Search, Tv, User, LayoutDashboard } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
