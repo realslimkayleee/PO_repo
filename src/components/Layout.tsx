@@ -12,8 +12,8 @@ export function cn(...inputs: ClassValue[]) {
 const Header = () => (
   <header className="sticky top-0 z-50 bg-ink/80 backdrop-blur-md border-b border-white/10">
     <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-      <NavLink to="/" className="text-xl font-display font-bold text-cream">
-        PedicuresOnly
+      <NavLink to="/" className="flex items-center">
+        <img src="/PO_logo_primary.png" alt="PedicuresOnly" className="h-8 w-auto object-contain" />
       </NavLink>
       <nav className="hidden sm:flex items-center space-x-6 text-sm font-medium">
         <NavLink to="/" className={({ isActive }) => cn("hover:text-cream transition-colors", isActive ? "text-cream" : "text-mute")}>
