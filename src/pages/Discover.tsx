@@ -45,9 +45,12 @@ export const Discover = () => {
           </div>
         </div>
         
-        {/* Scroll Indicator (Mobile only) */}
-        <div className="absolute top-0 right-0 h-[calc(100%-16px)] w-20 bg-gradient-to-l from-ink via-ink/80 to-transparent pointer-events-none flex items-center justify-end pr-1 sm:hidden">
-          <ChevronRight className="w-5 h-5 text-mute animate-pulse" />
+        {/* Scroll Indicator */}
+        <div className="absolute top-0 right-0 h-[calc(100%-16px)] w-32 bg-gradient-to-l from-ink via-ink/90 to-transparent pointer-events-none flex items-center justify-end pr-2">
+          <div className="flex items-center text-mute/60 animate-pulse">
+            <span className="text-[10px] font-medium uppercase tracking-widest">Swipe</span>
+            <ChevronRight className="w-4 h-4 ml-0.5" />
+          </div>
         </div>
       </section>
 
